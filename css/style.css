@@ -7,9 +7,25 @@
     margin: 0;
 }
 
+:root {
+	--maintheme: #E4DDD3;
+	--black: #020200;
+    --white: #FFFEFB;
+    --navgrey: rgba(62, 51, 47, 0.8);
+    --grey: #3E332F;
+  }
+
 body{
     background: #E4DDD3;
 }
+
+h3{
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    color: var(--black);
+}
+
 
 
 /*header*/
@@ -75,11 +91,17 @@ header{
     margin-left: 3.5rem; 
 }
 
+/*main*/
+main{
+	display:flex;
+	flex-direction:column;
+}
 
 
 
 /*section*/
 section{
+    flex: 1;
     padding: 10rem 0rem;
     width: 80%;
     display: flex;
@@ -119,11 +141,7 @@ section .right{
 
 
 section h3{
-    font-size: 2.5rem;
-    font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
-    letter-spacing: 4px;
-    color: #020200;
 }
 
 section p{
@@ -138,6 +156,7 @@ section p{
 
 /*quote part*/
 .quote{
+    flex: 1;
     display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -145,6 +164,7 @@ section p{
     color: #020200;
     text-align: center;
     padding: 10rem 0rem;
+    height: 100vh;
 }
 
 blockquote {
@@ -185,6 +205,7 @@ blockquote:after {
 /*article*/
 a {color:inherit;text-decoration:none;}
 article{
+  flex: 1;
   overflow:hidden;
   height: 100%;
   color:#FFFEFB;
@@ -262,6 +283,64 @@ p{
 
 
 
+/*menu*/
+#menu{
+    flex: 1;
+    height:auto; 
+    width:50%;
+    border:0.5px solid var(--black);
+    margin: 100px auto;
+    text-align:center;
+    position:relative;
+    color: var(--black);
+    padding:15px;
+}
+
+#menu span{
+    background-color: var(--maintheme);
+    padding: 0 2.5rem;
+    position:relative; 
+    top:-40px;
+}
+
+.corner{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    border:0.5px solid #fff;
+    transform:rotate(-45deg);  
+    position:absolute;
+    background: var(--maintheme);
+}
+
+#left_top{
+    top:-16px;
+    left:-16px;
+    border-color:transparent transparent var(--black) transparent;
+}
+
+#right_top{
+    top:-16px;
+    right:-16px;
+    border-color:transparent transparent transparent var(--black);
+}
+
+#left_bottom{
+    bottom:-16px;
+    left:-16px;
+    border-color:transparent var(--black) transparent transparent ;
+}
+
+#right_bottom{
+    bottom:-16px;
+    right:-16px;
+    border-color:var(--black) transparent transparent transparent;
+}
+
+#menu p{
+    padding: 1.25rem;
+    line-height: 200%;
+}
 
 
 /*small devices*/
