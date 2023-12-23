@@ -13,6 +13,7 @@
     --white: #FFFEFB;
     --navgrey: rgba(62, 51, 47, 0.8);
     --grey: #3E332F;
+    --brown: #C5875B;
   }
 
 body{
@@ -37,6 +38,8 @@ p{
     font-weight: 400;
     font-family: 'Noto Sans TC', sans-serif;
     color: var(--black);
+    letter-spacing: 0.5px;
+    line-height: 200%;
 }
 
 
@@ -157,9 +160,7 @@ section h3{
 }
 
 section p{
-    line-height: 200%;
     padding-bottom: 3rem;
-    letter-spacing: 0.5px;
 }
 
 
@@ -191,7 +192,7 @@ blockquote:before,
 blockquote:after {
 	font-family: 'Playfair Display', serif;
     position: absolute;
-	color: #C5875B;
+	color: var(--brown);
 	font-size: 8rem;
 	width: 4rem;
 	height: 4rem;
@@ -393,11 +394,121 @@ article:nth-child(even) .imgb{
 }
 
 
+/*contact*/
+.contact{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    padding: 10rem 0rem;
+    width: 80%;
+}
+
+.contact_title{
+    flex: 1;
+}
+
+.contact h3{
+    position: relative;
+    top: 100px;
+    left: 90px;
+    z-index: 1000;
+    font-size: 4rem;
+}
+
+.style_square_02{
+    top: -30px;
+    width: 215px;
+    height: 275px;
+    border: 2px solid var(--brown);
+    position: relative;
+}
+
+.info{
+    flex: 1;
+}
+
+/*button*/
+.a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+    position: relative;
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.2s ease;
+    padding: 12px 20px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(63, 130, 09, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+.btn span {
+    position: relative;
+    z-index: 1;
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 0.5px;
+}
+.btn svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--black);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+.btn:hover:before {
+    width: 100%;
+    background: #3f826d;
+}
+.btn:hover svg {
+    transform: translateX(0);
+    stroke: var(--white);
+}
+.btn:hover,
+.btn:focus {
+    color: var(--white);
+}
+.btn:active {
+    color: var(--black);
+    transform: scale(0.96);
+    stroke: var(--black);
+}
+
+
+
 /*small devices*/
 @media only screen and (max-width: 767.99px){
     section{
         flex-direction: column;
     }
+
+    .button-52 {
+        padding: 13px 50px 13px;
+        }
 }
 
 /*large devices*/
