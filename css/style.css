@@ -21,20 +21,20 @@ body{
 }
 
 h3{
-    font-size: 2.5rem;
+    font-size: max(3vw, 32px);
     font-family: 'Playfair Display', serif;
     letter-spacing: 4px;
     color: var(--black);
 }
 
 h1 {
-    font-size:2rem;
+    font-size: max(2.5vw, 25px);
     font-weight:600;
     font-family: Outfit;
 }
 
 p{
-    font-size: 1.25rem;
+    font-size: max(1.5vw, 16px);
     font-weight: 400;
     font-family: 'Noto Sans TC', sans-serif;
     color: var(--black);
@@ -84,14 +84,14 @@ header{
 
 .navbar-brand{
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
+    font-size: max(3vw, 32px);
     color: transparent;
     letter-spacing: 4px;
 }
 
 .nav-link{
     font-family: 'Outfit', sans-serif;
-    font-size: 1rem;
+    font-size: max(1.5vw, 16px);
     letter-spacing: 4px;
 }
 
@@ -128,7 +128,7 @@ section{
 
 section .left{
     padding: 0rem 2rem 0rem 0rem;
-    position: relative;
+/*    position: relative;*/
     width: 24rem;
     height: 30rem;
     flex: 1;
@@ -137,17 +137,18 @@ section .left{
 .style_square_01{
     width: 370px;
     height: 463px;
-    border: 2px solid #FFFEFB;
-    position: absolute;
-    top: 18px;
+    border: 2px solid var(--white);
+    position: relative;
+    top: -445px;
+    left: -17px;
 }
 
 section .left img{
     width: 370px;
     height: 463px;
     overflow: hidden;
-    position: absolute;
-    left: 17px;
+    position: relative;
+    /*left: 17px;*/
     z-index: 10000;
 }
 
@@ -172,7 +173,7 @@ section p{
 	flex-direction: column;
 	align-items: center;
     justify-content: center;
-    color: #020200;
+    color: var(--black);
     text-align: center;
     padding: 10rem 0rem;
     height: 100vh;
@@ -181,7 +182,7 @@ section p{
 blockquote {
 	font-family: 'Noto Serif TC', serif;
     font-weight: 500;
-	font-size: 2.5rem;
+	font-size: max(3vw, 28px);
 	max-width: 800px;
 	line-height: 1.4;
 	position: relative;
@@ -194,7 +195,7 @@ blockquote:after {
 	font-family: 'Playfair Display', serif;
     position: absolute;
 	color: var(--brown);
-	font-size: 8rem;
+	font-size: min(max(10vw, 40px), 128px);
 	width: 4rem;
 	height: 4rem;
 }
@@ -223,7 +224,7 @@ a {
   flex: 1;
   overflow:hidden;
   height: 100%;
-  color:#FFFEFB;
+  color: var(--white);
   padding: 10rem 0rem 15rem 0rem;
 }
 
@@ -374,7 +375,7 @@ article{
 }
 
 .textb p{
-	font-size:max(1vw, 20px);
+	font-size: max(1.5vw, 16px);
 	padding:30px;
 	line-height:2em;
 }
@@ -415,7 +416,7 @@ article:nth-child(even) .imgb{
     top: 100px;
     left: 90px;
     z-index: 1000;
-    font-size: 4rem;
+    font-size: max(5vw, 40px);
 }
 
 .style_square_02{
@@ -531,18 +532,5 @@ footer p{
         flex-direction: column;
     }
 
-    .button-52 {
-        padding: 13px 50px 13px;
-        }
 }
 
-/*large devices*/
-@media only screen and (min-width: 1200px){
-    .textb :nth-child(2n){
-        order: 1;
-    }
-
-    .imgb :nth-child(2n){
-        order: 2;
-    }
-}
