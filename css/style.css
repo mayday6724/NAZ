@@ -49,7 +49,7 @@ header{
 }
 
 .banner{
-    height: 832px;
+    height: 100vh;
     background-image: url("../img/banner.jpg");
     background-size: cover;
     background-position: center;
@@ -84,14 +84,14 @@ header{
 
 .navbar-brand{
     font-family: 'Playfair Display', serif;
-    font-size: max(3vw, 32px);
+    font-size: 2rem;
     color: transparent;
     letter-spacing: 4px;
 }
 
 .nav-link{
     font-family: 'Outfit', sans-serif;
-    font-size: max(1.5vw, 16px);
+    font-size: 1rem;
     letter-spacing: 4px;
 }
 
@@ -120,6 +120,7 @@ section{
     flex: 1;
     padding: 10rem 0rem;
     width: 80%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -129,8 +130,8 @@ section{
 section .left{
     padding: 0rem 2rem 0rem 0rem;
 /*    position: relative;*/
-    width: 24rem;
-    height: 30rem;
+    /*width: 24rem;*/
+    /*height: 100vh;*/
     flex: 1;
 }
 
@@ -143,9 +144,14 @@ section .left{
     left: -17px;
 }
 
-section .left img{
-    width: 370px;
-    height: 463px;
+section .left_img{
+    background: url(../img/cake.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 28vw;
+    max-width: 370px;
+    height: 36vw;
+    max-height: 463px;
     overflow: hidden;
     position: relative;
     /*left: 17px;*/
@@ -183,7 +189,6 @@ blockquote {
 	font-family: 'Noto Serif TC', serif;
     font-weight: 500;
 	font-size: max(3vw, 28px);
-	max-width: 800px;
 	line-height: 1.4;
 	position: relative;
 	margin: 0;
@@ -528,9 +533,42 @@ footer p{
 
 /*small devices*/
 @media only screen and (max-width: 767.99px){
+    
+    .nav-item{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    
     section{
         flex-direction: column;
     }
 
+    blockquote:before,
+    blockquote:after{
+        font-size: 128px;
+        position: absolute;
+        color: rgba(197, 135, 91, 0.3);
+        z-index: -100;
+    }
+    blockquote:before {
+        content: '“';
+        left: 2rem;
+        top: -5rem;
+    }
+    
+    blockquote:after {
+        content: '”';
+        bottom: -1rem;
+        right: 2rem;
+    }
+
 }
 
+/*medium devices*/
+@media (min-width: 768px) and (max-width: 998px){
+    .nav-item{
+        margin-left: 0;
+        text-align: center;
+    }
+}
