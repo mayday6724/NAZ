@@ -86,6 +86,7 @@ header{
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     color: transparent;
+    letter-spacing: 4px;
 }
 
 .nav-link{
@@ -99,7 +100,7 @@ header{
 }
 
 .navbar-nav a{
-    color: #fffefb;
+    color: var(--white);
 }
 
 .nav-item{
@@ -496,6 +497,30 @@ article:nth-child(even) .imgb{
     color: var(--black);
     transform: scale(0.96);
     stroke: var(--black);
+}
+
+footer{
+    background-color: var(--navgrey);
+    padding: 2rem;
+}
+
+footer h3{
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer p{
+    color: var(--white);
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 3px;
+    line-height: 130%;
+    margin-bottom: 0;
+    font-weight: 200;
 }
 
 
