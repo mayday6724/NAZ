@@ -227,6 +227,7 @@ a {
   align-items:center;
   z-index:2;
   transform:scale(.97);
+  cursor: default;
 }
 .c{
   position:relative;
