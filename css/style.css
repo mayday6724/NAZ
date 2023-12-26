@@ -62,7 +62,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #3E332F;
+    background: var(--grey);
     opacity: 0;
 }
 
@@ -148,7 +148,7 @@ section .style_square_01{
 
 section .right{
     grid-column: 5/8;
-    grid-row: 3/6;
+    grid-row: 2/6;
 }
 
 /*quote part*/
@@ -282,7 +282,7 @@ a {
 .menu{
     flex: 1;
     height:auto; 
-    width:50%;
+    width:60%;
     border:0.5px solid var(--black);
     margin: 5rem auto 10rem auto;
     text-align:center;
@@ -519,9 +519,39 @@ footer p{
         text-align: center;
     }
 
+    main{
+        text-align: center;
+    }
     
     section{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 20px 80% 20px 20px;
+        grid-template-rows: 20px 1fr 20px 1fr;
+        margin: auto;
+    }
+
+    section .left_img{
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+
+    section .style_square_01{
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+
+    section .right{
+        grid-column: 1/5;
+        grid-row: 4/5;
+        padding-top: 10%;
+    }
+
+    .quote{
+        width: 90%;
+        margin: auto;
+    }
+    .hide_on_mobile{
+        display: none;
     }
 
     blockquote:before,
@@ -534,7 +564,7 @@ footer p{
     blockquote:before {
         content: '“';
         left: 2rem;
-        top: -5rem;
+        top: -5.5rem;
     }
     
     blockquote:after {
@@ -543,6 +573,34 @@ footer p{
         right: 2rem;
     }
 
+    .menu{
+        width: 80%;
+    }
+
+    .menu p{
+        padding: 0.25rem;
+    }
+
+    article{
+        flex-direction: column;
+    }
+
+    article:nth-child(even) .textb{
+        order: 2;
+    }
+    
+    article:nth-child(even) .imgb{
+        order: 1;
+    }
+
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact h3 {
+        position: unset;
+        margin-bottom: 1.5rem;
+    }
 }
 
 /*medium devices*/
@@ -551,4 +609,9 @@ footer p{
         margin-left: 0;
         text-align: center;
     }
+}
+
+/*large devices*/
+@media only screen and (min-width: 999px){
+    
 }
