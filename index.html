@@ -64,7 +64,7 @@
 
 
 <!--gallery-->
-<div class="gallery" id="menu">
+<div class="gallery hide_on_mobile">
     <div id="wrap">
         <a href="#menu" class="hb">
           <div class="c">
@@ -131,8 +131,23 @@
       </div>
 </div>
 
+<div class="hide_on_large">
+  <!--swiper-->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/pound cake.jpg" width="100%"/></div>
+      <div class="swiper-slide"><img src="img/panna cotta.jpg" width="100%"/></div>
+      <div class="swiper-slide"><img src="img/chocolate.jpg" width="100%"/></div>
+      <div class="swiper-slide"><img src="img/cake.jpg" width="100%"/></div>
+      <div class="swiper-slide"><img src="img/basque.jpg" width="100%"/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+
 <!--menu-->
-<div class="menu">
+<div class="menu" id="menu">
   <div class="corner "id="left_top"></div>
   <div class="corner" id="left_bottom"></div>
   <div class="corner" id="right_top"></div>
@@ -205,4 +220,14 @@
     IG: naz.everafter</p>
 </footer>
 </body>
+
+<!--Swiper toolbox-->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<link href="css/swiper.css" rel="stylesheet" type="text/css">
 </html>
