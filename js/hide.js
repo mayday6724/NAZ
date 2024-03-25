@@ -98,6 +98,7 @@ function loadResponsiveContent() {
     </div>;
   }
 }
+
 $(document).ready(function () {
   loadResponsiveContent();
 
