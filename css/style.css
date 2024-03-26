@@ -50,7 +50,7 @@ header{
 
 .banner{
     height: 100vh;
-    background-image: url("../img/banner01.jpg");
+    background-image: url("https://res.cloudinary.com/dplpkkbwp/image/upload/ju3avepl2wmnieq2mkhv.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
