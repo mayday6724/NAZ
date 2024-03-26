@@ -18,13 +18,7 @@ function loadResponsiveContent() {
       <div class="swiper-pagination"></div>
     </div>
       `;
-
-  // Check if screen width is less than 767.99px
-  if (window.innerWidth < 767.99) {
-    targetElement.innerHTML = mobileContent;
-  } else {
-    `
-    <div id="wrap">
+  const desktopContent = `<div id="wrap">
       <a href="#menu" class="hb">
         <div class="c">
           <img src="img/basque.jpg" alt="basque cheesecake" />
@@ -97,6 +91,12 @@ function loadResponsiveContent() {
         <img src="img/pound cake.jpg" alt="pound cake" />
       </div>
     </div>`;
+  // Check if screen width is less than 767.99px
+
+  if (window.innerWidth < 767.99) {
+    targetElement.innerHTML = mobileContent;
+  } else {
+    targetElement.innerHTML = desktopContent;
   }
 }
 
