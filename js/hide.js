@@ -6,8 +6,7 @@ function loadResponsiveContent() {
 
   // Define the HTML content for screens smaller than 767.99px
   const mobileContent = `
-        <!-- Replace with the HTML you want to load for smaller screens -->
-        <div class="swiper mySwiper">
+    <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="img/pound cake.jpg" width="100%"/></div>
         <div class="swiper-slide"><img src="img/panna cotta.jpg" width="100%"/></div>
@@ -16,9 +15,9 @@ function loadResponsiveContent() {
         <div class="swiper-slide"><img src="img/basque.jpg" width="100%"/></div>
       </div>
       <div class="swiper-pagination"></div>
-    </div>
-      `;
-  const desktopContent = `<div id="wrap">
+    </div>`;
+  const desktopContent = `
+  <div id="wrap">
       <a href="#menu" class="hb">
         <div class="c">
           <img src="img/basque.jpg" alt="basque cheesecake" />
@@ -91,7 +90,6 @@ function loadResponsiveContent() {
         <img src="img/pound cake.jpg" alt="pound cake" />
       </div>
     </div>`;
-  // Check if screen width is less than 767.99px
 
   if (window.innerWidth < 767.99) {
     targetElement.innerHTML = mobileContent;
