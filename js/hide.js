@@ -23,6 +23,7 @@ function loadResponsiveContent() {
   if (window.innerWidth < 767.99) {
     targetElement.innerHTML = mobileContent;
   } else {
+    `
     <div id="wrap">
       <a href="#menu" class="hb">
         <div class="c">
@@ -95,7 +96,7 @@ function loadResponsiveContent() {
       <div class="fullBg">
         <img src="img/pound cake.jpg" alt="pound cake" />
       </div>
-    </div>;
+    </div>`;
   }
 }
 
