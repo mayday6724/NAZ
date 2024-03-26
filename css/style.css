@@ -128,7 +128,7 @@ section{
 }
 
 section .left_img{
-    background: url(../img/cake.jpg) center no-repeat;
+    background: url(https://res.cloudinary.com/dplpkkbwp/image/upload/apjfdyd24o6anzxpx4bk.jpg) center no-repeat;
     background-size: cover;
     aspect-ratio: 4/5;
     z-index: 1000;

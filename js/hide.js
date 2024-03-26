@@ -8,11 +8,11 @@ function loadResponsiveContent() {
   const mobileContent = `
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/pound cake.jpg" width="100%"/></div>
-        <div class="swiper-slide"><img src="img/panna cotta.jpg" width="100%"/></div>
-        <div class="swiper-slide"><img src="img/chocolate.jpg" width="100%"/></div>
-        <div class="swiper-slide"><img src="img/cake.jpg" width="100%"/></div>
-        <div class="swiper-slide"><img src="img/basque.jpg" width="100%"/></div>
+        <div class="swiper-slide"><img src="https://res.cloudinary.com/dplpkkbwp/image/upload/izdfw8ytkuqs0sc50eag.jpg" width="100%"/></div>
+        <div class="swiper-slide"><img src="https://res.cloudinary.com/dplpkkbwp/image/upload/xhzxsmqahypbpryd2q1r.jpg" width="100%"/></div>
+        <div class="swiper-slide"><img src="https://res.cloudinary.com/dplpkkbwp/image/upload/hl65sryi4kbhvjg3zn3s.jpg" width="100%"/></div>
+        <div class="swiper-slide"><img src="https://res.cloudinary.com/dplpkkbwp/image/upload/apjfdyd24o6anzxpx4bk.jpg" width="100%"/></div>
+        <div class="swiper-slide"><img src="https://res.cloudinary.com/dplpkkbwp/image/upload/gzwwhjg0l6ahqztefd87.jpg" width="100%"/></div>
       </div>
       <div class="swiper-pagination"></div>
     </div>`;
