@@ -18,6 +18,7 @@
 
 body{
     background: #E4DDD3;
+    width: 100%;
 }
 
 h3{
@@ -111,6 +112,7 @@ header{
 main{
 	display:flex;
 	flex-direction:column;
+    overflow-x: hidden;
 }
 
 
@@ -204,21 +206,24 @@ a {
     text-decoration:none;
 }
 
-.gallery{
-  flex: 1;
-  overflow:hidden;
-  height: 100%;
-  color: var(--white);
+#gallery{
+  overflow-x: auto;
+  height: 100vh;
   padding: 10rem 0rem 15rem 0rem;
 }
 
+#gallery::-webkit-scrollbar {
+    display: none; /* 隐藏滾動條 */
+}
+
 #wrap{
-  width:150%;
-  height:100%;
+  width: 150%;
+  height:70%;
   display:flex;
   align-items:stretch;
   margin:0 25%;
 }
+
 .hb {
   position:relative;
   width:25%;
