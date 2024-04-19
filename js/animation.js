@@ -49,3 +49,5 @@ $(document).ready(function () {
     });
   });
 });
+
+$("#gallery").height($(window).height() / 2);
